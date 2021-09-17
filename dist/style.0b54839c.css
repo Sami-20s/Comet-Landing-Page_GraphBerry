@@ -1,2 +1,70 @@
+*,
+*::after,
+*::before,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:visited,
+a:focus {
+  text-decoration: none;
+}
+
+nav {
+  width: 100%;
+  padding: 32px 193px;
+}
+nav .nav__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .nav__container .logo__container {
+  padding-bottom: 20px;
+}
+nav .nav__container .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .nav__container .navbar ul li a {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  color: #8d91c2;
+  transition: color 0.2s ease;
+}
+nav .nav__container .navbar ul li a:hover {
+  color: #5ad9b9;
+}
+nav .nav__container .navbar ul li:not(:first-child) {
+  margin-left: 40px;
+}
+nav .nav__container .navbar ul li:last-child {
+  margin-left: 190px;
+}
+nav .nav__container .navbar ul li:last-child button {
+  width: 171px;
+  height: 59px;
+  border: solid 1px #5ad9b9;
+  border-radius: 30px;
+  background-color: #5ad9b9;
+  outline: none;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+nav .nav__container .navbar ul li:last-child button:hover, nav .nav__container .navbar ul li:last-child button:active {
+  background-color: transparent;
+  color: #5ad9b9;
+}
 
 /*# sourceMappingURL=/style.0b54839c.css.map */

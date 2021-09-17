@@ -1,0 +1,16 @@
+*,
+*::after,
+*::before,
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a,
+a:visited,
+a:focus {
+    text-decoration: none;
+}
+@import "variables/variables";
+@import "nav/nav";

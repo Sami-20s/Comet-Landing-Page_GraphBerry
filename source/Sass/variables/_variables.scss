@@ -1,0 +1,15 @@
+// font color
+$lightBlue: #8d91c2;
+$dodgerBlue: #5ad9b9;
+// font family
+$pop: "Poppins";
+// padding left & right
+$pa: 386px;
+// mixin
+@mixin par($f, $s, $w, $c) {
+    font-family: $f;
+    font-size: $s;
+    font-weight: $w;
+    color: $c;
+}
+// light : 300 , regular : 400 , medium : 500 , semi-bold : 600 , bold : 700

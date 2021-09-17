@@ -1,0 +1,51 @@
+nav {
+    width: 100%;
+    padding: 32px 193px;
+    .nav__container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo__container {
+            padding-bottom: 20px;
+        }
+        .navbar {
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                li {
+                    a {
+                        @include par($pop, 16px, 500, $lightBlue);
+                        transition: color 0.2s ease;
+                        &:hover {
+                            color: $dodgerBlue;
+                        }
+                    }
+                    &:not(:first-child) {
+                        margin-left: 40px;
+                    }
+                    &:last-child {
+                        margin-left: 190px;
+                        button {
+                            width: 171px;
+                            height: 59px;
+                            border: solid 1px $dodgerBlue;
+                            border-radius: 30px;
+                            background-color: $dodgerBlue;
+                            outline: none;
+                            @include par($pop, 16px, 500, white);
+                            cursor: pointer;
+                            transition: all 0.3s ease-in-out;
+                            &:hover,
+                            &:active {
+                                background-color: transparent;
+                                color: $dodgerBlue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
