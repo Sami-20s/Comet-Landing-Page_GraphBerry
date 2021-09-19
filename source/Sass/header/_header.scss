@@ -1,0 +1,117 @@
+header {
+    position: relative;
+    // ! background cubes
+    .cube1,
+    .cube2,
+    .cube3 {
+        position: absolute;
+    }
+    .cube1 {
+        top: -50px;
+        right: 70px;
+    }
+    .cube2 {
+        left: 70px;
+    }
+    .cube3 {
+        top: 470px;
+        left: 500px;
+    }
+    .header {
+        &__container {
+            width: 100%;
+            padding: 0 $pa;
+            margin-top: 40px;
+            &__top {
+                display: flex;
+                justify-content: space-between;
+                &__left {
+                    h1 {
+                        @include par($yes, 50px, 400, $darkBlue);
+                        width: 494px;
+                        line-height: 1.4;
+                        margin-top: 98.5px;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        @include par($pop, 15px, 400, $lightGray);
+                        width: 423px;
+                        line-height: 2.26;
+                        margin-bottom: 15px;
+                    }
+                    button {
+                        @include par($pop, 16px, 500, white);
+                        width: 171px;
+                        height: 59px;
+                        border: solid 1px $blue;
+                        border-radius: 30px;
+                        background-color: $blue;
+                        outline: none;
+                        cursor: pointer;
+                        transition: all 0.3s ease-in-out;
+                        &:hover,
+                        &:active {
+                            background-color: transparent;
+                            color: $blue;
+                        }
+                    }
+                }
+                &__right {
+                    position: relative;
+                    &__img {
+                        img {
+                            border-radius: 0 100px 0 100px;
+                            box-shadow: 35px 55px 1px $shadow;
+                        }
+                    }
+                    &__card {
+                        display: none;
+                        position: absolute;
+                        display: flex;
+                        align-items: center;
+                        width: 196px;
+                        height: 92px;
+                        bottom: 76px;
+                        left: -37%;
+                        transform: translateX(50%);
+                        padding: 0 0 0 25.1px;
+                        border-radius: 12px;
+                        background-color: white;
+                        box-shadow: 4px 9px 16px #27343d23;
+                        cursor: pointer;
+                        img {
+                            margin-right: 21.8px;
+                        }
+                        &__paragraph {
+                            h4 {
+                                @include par($yes, 25px, 400, $darkBlue);
+                            }
+                            p {
+                                @include par($pop, 15px, 500, $darkBlue);
+                            }
+                        }
+                    }
+                }
+            }
+            &__bottom {
+                display: flex;
+                justify-content: center;
+                margin-top: 93px;
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    &:not(:last-child) {
+                        margin-right: 190px;
+                    }
+                    h4 {
+                        @include par($yes, 60px, 400, $darkBlue);
+                    }
+                    p {
+                        @include par($pop, 16px, 500, $darkBlue);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,10 +1,15 @@
 // font color
-$lightBlue: #8d91c2;
+$lightGray: #8d91c2;
 $dodgerBlue: #5ad9b9;
+$darkBlue: #111a53;
+$blue: #4354d0;
+$shadow: #f8faff;
+
 // font family
-$pop: "Poppins";
+$pop: "Poppins", sans-serif;
+$yes: "Yeseva One", cursive;
 // padding left & right
-$pa: 386px;
+$pa: 193px;
 // mixin
 @mixin par($f, $s, $w, $c) {
     font-family: $f;

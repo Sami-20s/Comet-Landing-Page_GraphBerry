@@ -6,6 +6,8 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 a,
@@ -14,9 +16,17 @@ a:focus {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
   width: 100%;
-  padding: 32px 193px;
+  padding: 20px 193px;
 }
 nav .nav__container {
   position: relative;
@@ -25,7 +35,7 @@ nav .nav__container {
   justify-content: space-between;
 }
 nav .nav__container .logo__container {
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 nav .nav__container .navbar ul {
   display: flex;
@@ -33,7 +43,7 @@ nav .nav__container .navbar ul {
   justify-content: space-between;
 }
 nav .nav__container .navbar ul li a {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #8d91c2;
@@ -55,7 +65,7 @@ nav .nav__container .navbar ul li:last-child button {
   border-radius: 30px;
   background-color: #5ad9b9;
   outline: none;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: white;
@@ -65,6 +75,135 @@ nav .nav__container .navbar ul li:last-child button {
 nav .nav__container .navbar ul li:last-child button:hover, nav .nav__container .navbar ul li:last-child button:active {
   background-color: transparent;
   color: #5ad9b9;
+}
+
+header {
+  position: relative;
+}
+header .cube1,
+header .cube2,
+header .cube3 {
+  position: absolute;
+}
+header .cube1 {
+  top: -50px;
+  right: 70px;
+}
+header .cube2 {
+  left: 70px;
+}
+header .cube3 {
+  top: 470px;
+  left: 500px;
+}
+header .header__container {
+  width: 100%;
+  padding: 0 193px;
+  margin-top: 40px;
+}
+header .header__container__top {
+  display: flex;
+  justify-content: space-between;
+}
+header .header__container__top__left h1 {
+  font-family: "Yeseva One", cursive;
+  font-size: 50px;
+  font-weight: 400;
+  color: #111a53;
+  width: 494px;
+  line-height: 1.4;
+  margin-top: 98.5px;
+  margin-bottom: 20px;
+}
+header .header__container__top__left p {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #8d91c2;
+  width: 423px;
+  line-height: 2.26;
+  margin-bottom: 15px;
+}
+header .header__container__top__left button {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  width: 171px;
+  height: 59px;
+  border: solid 1px #4354d0;
+  border-radius: 30px;
+  background-color: #4354d0;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+header .header__container__top__left button:hover, header .header__container__top__left button:active {
+  background-color: transparent;
+  color: #4354d0;
+}
+header .header__container__top__right {
+  position: relative;
+}
+header .header__container__top__right__img img {
+  border-radius: 0 100px 0 100px;
+  box-shadow: 35px 55px 1px #f8faff;
+}
+header .header__container__top__right__card {
+  display: none;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 196px;
+  height: 92px;
+  bottom: 76px;
+  left: -37%;
+  transform: translateX(50%);
+  padding: 0 0 0 25.1px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 4px 9px 16px #27343d23;
+  cursor: pointer;
+}
+header .header__container__top__right__card img {
+  margin-right: 21.8px;
+}
+header .header__container__top__right__card__paragraph h4 {
+  font-family: "Yeseva One", cursive;
+  font-size: 25px;
+  font-weight: 400;
+  color: #111a53;
+}
+header .header__container__top__right__card__paragraph p {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #111a53;
+}
+header .header__container__bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 93px;
+}
+header .header__container__bottom div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .header__container__bottom div:not(:last-child) {
+  margin-right: 190px;
+}
+header .header__container__bottom div h4 {
+  font-family: "Yeseva One", cursive;
+  font-size: 60px;
+  font-weight: 400;
+  color: #111a53;
+}
+header .header__container__bottom div p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #111a53;
 }
 
 /*# sourceMappingURL=/style.0b54839c.css.map */
