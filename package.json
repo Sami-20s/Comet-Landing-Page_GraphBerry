@@ -1,0 +1,16 @@
+{
+    "name": "Comet",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "parcel": "parcel source/index.html"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "parcel-bundler": "^1.12.5",
+        "sass": "^1.38.2"
+    }
+}
