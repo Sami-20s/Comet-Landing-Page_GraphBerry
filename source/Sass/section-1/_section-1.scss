@@ -1,0 +1,46 @@
+section#section-1 {
+    position: relative;
+    width: 100%;
+    padding: 126px $pa 0;
+    background-color: $shadow;
+    .section-1__container {
+        &__heading {
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
+            h2 {
+                width: 754px;
+                line-height: 1.4;
+                @include par($yes, 40px, 400, $darkBlue);
+            }
+            img {
+                margin-right: 36px;
+            }
+        }
+        &__paragraph {
+            margin-bottom: 75px;
+            p {
+                width: 954px;
+                line-height: 2.3;
+                @include par($pop, 15px, 400, $darkBlue);
+            }
+        }
+        &__detail {
+            &__left {
+                img {
+                }
+            }
+            &__right {
+                h3 {
+                    width: 574px;
+                    @include par($yes, 40px, 400, $darkBlue);
+                }
+                ul {
+                    li {
+                        @include par($pop, 15px, 400, $darkBlue);
+                    }
+                }
+            }
+        }
+    }
+}

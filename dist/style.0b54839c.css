@@ -206,4 +206,51 @@ header .header__container__bottom div p {
   color: #111a53;
 }
 
+section#section-1 {
+  position: relative;
+  width: 100%;
+  padding: 126px 193px 0;
+  background-color: #f8faff;
+}
+section#section-1 .section-1__container__heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+section#section-1 .section-1__container__heading h2 {
+  width: 754px;
+  line-height: 1.4;
+  font-family: "Yeseva One", cursive;
+  font-size: 40px;
+  font-weight: 400;
+  color: #111a53;
+}
+section#section-1 .section-1__container__heading img {
+  margin-right: 36px;
+}
+section#section-1 .section-1__container__paragraph {
+  margin-bottom: 75px;
+}
+section#section-1 .section-1__container__paragraph p {
+  width: 954px;
+  line-height: 2.3;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #111a53;
+}
+section#section-1 .section-1__container__detail__right h3 {
+  width: 574px;
+  font-family: "Yeseva One", cursive;
+  font-size: 40px;
+  font-weight: 400;
+  color: #111a53;
+}
+section#section-1 .section-1__container__detail__right ul li {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #111a53;
+}
+
 /*# sourceMappingURL=/style.0b54839c.css.map */
